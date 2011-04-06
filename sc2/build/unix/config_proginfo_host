@@ -94,6 +94,10 @@ case "$HOST_SYSTEM" in
 		LIB_SDL_image_LDFLAGS="$LIB_SDL_LDFLAGS -lSDL_image"
 		;;
 esac
+LIB_SDL_CFLAGS="-I/usr/local/include"
+LIB_SDL_LDFLAGS="-L/usr/local/lib -lSDL"
+LIB_SDL_image_CFLAGS="-I/usr/local/include"
+LIB_SDL_image_LDFLAGS="-L/usr/local/lib -lSDL_image"
 LIB_SDL_image_VERSION=""
 
 
